@@ -1,0 +1,9 @@
+# 1. Créer un fichier config.json (voir exemple ci-dessus)
+# 2. Lancer la génération
+./pivot4 batch config.json
+
+# 3. Exporter un terrain directement
+./pivot4 export-ply -5 5 -5 5 mon_terrain.ply
+
+# 4. Visualiser dans n'importe quel viewer 3D
+# (Blender, MeshLab, ou directement dans votre moteur de jeu)
