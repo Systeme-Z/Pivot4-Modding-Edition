@@ -1,0 +1,11 @@
+# Compilation simple
+g++ -O3 -std=c++17 pivot4.cpp -o pivot4
+
+# Avec support des images (recommandé)
+g++ -O3 -std=c++17 -DPIVOT4_USE_STB_IMAGE pivot4.cpp -o pivot4
+
+# Avec serveur web (nécessite httplib)
+g++ -O3 -std=c++17 -DPIVOT4_ENABLE_WEBUI pivot4.cpp -o pivot4 -lpthread
+
+# Sur Windows (MinGW)
+g++ -O3 -std=c++17 pivot4.cpp -o pivot4.exe
