@@ -1,0 +1,31 @@
+{
+    "seed": 1337,
+    "hauteur_min": -5,
+    "hauteur_max": 12,
+    "amplitude_octave": 3,
+    "chunk_taille": 64,
+    "objets_par_chunk": 30,
+    "erosion_active": true,
+    "rivieres_active": true,
+    "nb_rivieres": 4,
+    "masque_entree": "masques/continent.png",
+    "biomes": [
+        {"name": "ocean", "seuil_min": 0.0, "seuil_max": 0.2, "texture_index": 0},
+        {"name": "plage", "seuil_min": 0.2, "seuil_max": 0.25, "texture_index": 1},
+        {"name": "foret", "seuil_min": 0.3, "seuil_max": 0.6, "texture_index": 2},
+        {"name": "montagne", "seuil_min": 0.7, "seuil_max": 1.0, "texture_index": 3}
+    ],
+    "jobs": [
+        {
+            "name": "monde_complet",
+            "min_cx": -10,
+            "max_cx": 10,
+            "min_cz": -10,
+            "max_cz": 10,
+            "exporter_heightmap": true,
+            "exporter_splatmaps": true,
+            "exporter_ply": true,
+            "formats_export": ["obj"]
+        }
+    ]
+}
